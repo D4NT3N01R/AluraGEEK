@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header, footer {
+    background-color: #1f1e58;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img, footer img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+h1 {
+    color: #231e75;
+}
+
+main {
+    padding: 2rem;
+}
+.mis-productos{
+    flex-direction: row;
+    display: flex;
+    gap: 1em;
+}
+.lista-productos, .agregar-productos {
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-productos ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    /* Center align items */
+}
+
+/* Product Card Styles */
+.producto_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced out */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.descripcion-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.img-container{
+    width: 100px;
+    height: 100px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.producto-imagen {
+    max-width:100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    
+}
+
+.producto-titulo {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.producto-precio {
+    font-size: 1rem;
+    color: #302ca7;
+    text-align: center;
+}
+.boton-container {
+    display: flex;
+    justify-content:flex-start; /* Align the button to the end */
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+.boton_eliminar {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 0.3px 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .9s;
+}
+.boton_eliminar:hover {
+    background-color: #a9aca955;
+    transform: scale(1.1);
+}
+
+/* Form Styles */
+.formulario-agregar-productos {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-agregar-productos input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-enviar, .boton-limpiar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boton-enviar {
+    background-color: #2b3188;
+    color: white;
+}
+
+.boton-limpiar {
+    background-color: #f44336;
+    color: white;
+}
+
+.boton-enviar:hover, .boton-limpiar:hover {
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+.footer-h2-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer h2 {
+    margin-left: 10px;
+}
+
+.text-footer {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .producto_item {
+        flex: 1 1 calc(33.333% - 1rem); /* Take up 33.333% of the container */
+        max-width: calc(33.333% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .mis-productos{
+        flex-direction: column;
+    }
+    .lista-productos, .agregar-productos {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .producto_item {
+        flex: 1 1 calc(50% - 1rem); /* Take up 50% of the container */
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .producto_item {
+        flex: 1 1 100%; /* Take up 100% of the container */
+        max-width: 100%;
+    }
+}
+

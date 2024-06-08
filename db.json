@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "ad12",
+      "title": "Lego batman",
+      "price": "3000",
+      "imageUrl": "https://th.bing.com/th/id/OIP.evpuivgXHVcYjpAM26aOswHaEK?w=329&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    },
+    {
+      "id": "1437",
+      "title": "Chips Edicion asiatica",
+      "price": "200",
+      "imageUrl": "https://th.bing.com/th/id/R.c72e34eee5c4480b973645fba1499096?rik=YL2bfg8a%2fD%2b24Q&pid=ImgRaw&r=0"
+    }
+  ]
+}
